@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Koreksi Hutang Deposit</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="sys/includes/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="sys/includes/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="sys/css/bootstrap-datepicker.css" rel="stylesheet">
+
+    <link href="sys/css/style.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="../assets/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="../assets/ico/favicon.png">
+
+    <style>
+        /*.datepicker { top: 0 !important; left: 0 !important; display: block;}*/
+    </style>
+
+  </head>
+
+  <body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="brand" href="#">EXPRESS</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav pull-right">
+              <li class="active"><a href="#">Admin</a></li>
+              <li><a href="#about">Logout</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid content">
+        <div class="span3 accordion" id="leftMenu">
+            <div class="accordion-group">
+                <div class="accordion-heading">
+                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#leftMenu" href="#">
+                          <i class="icon-home"></i> Home
+                    </a>
+                </div>
+            </div>
+            <div class="accordion-group">
+                <div class="accordion-heading">
+                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#leftMenu" href="#collapseTwo">
+                        <i class="icon-th"></i> Admin
+                    </a>
+                </div>
+                <div id="collapseTwo" class="accordion-body collapse" style="height: 0px; ">
+                    <div class="accordion-inner">
+                        <ul>
+                            <li>This is one</li>
+                            <li>This is two</li>
+                            <li>This is Three</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-group">
+                <div class="accordion-heading">
+                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#leftMenu" href="#collapseThree">
+                        <i class="icon-th-list"></i> CSO
+                    </a>
+                </div>
+                <div id="collapseThree" class="accordion-body collapse" style="height: 0px; ">
+                    <div class="accordion-inner">
+                        <ul>
+                            <li>This is one</li>
+                            <li>This is two</li>
+                            <li>This is Three</li>
+                        </ul>                 
+                    </div>
+                 </div>
+            </div>
+            <div class="accordion-group">
+                <div class="accordion-heading">
+                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#leftMenu" href="#collapseFour">
+                        <i class="icon-list-alt"></i> F & A
+                    </a>
+                </div>
+                <div id="collapseFour" class="accordion-body collapse" style="height: 0px; ">
+                    <div class="accordion-inner">
+                        <ul>
+                            <li>This is one</li>
+                            <li>This is two</li>
+                            <li>This is Three</li>
+                        </ul>                 
+                    </div>
+                 </div>
+            </div>
+            <div class="accordion-group">
+                <div class="accordion-heading">
+                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#leftMenu" href="#collapseFive">
+                        <i class="icon-inbox"></i> Government
+                    </a>
+                </div>
+                <div id="collapseFive" class="accordion-body collapse" style="height: 0px; ">
+                    <div class="accordion-inner">
+                        <ul>
+                            <li>This is one</li>
+                            <li>This is two</li>
+                            <li>This is Three</li>
+                        </ul>                 
+                    </div>
+                 </div>
+            </div>
+            <div class="accordion-group">
+                <div class="accordion-heading">
+                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#leftMenu" href="#collapseSix">
+                        <i class="icon-briefcase"></i> Gudang
+                    </a>
+                </div>
+                <div id="collapseSix" class="accordion-body collapse" style="height: 0px; ">
+                    <div class="accordion-inner">
+                        <ul>
+                            <li>This is one</li>
+                            <li>This is two</li>
+                            <li>This is Three</li>
+                        </ul>                 
+                    </div>
+                 </div>
+            </div>
+            <div class="accordion-group">
+                <div class="accordion-heading">
+                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#leftMenu" href="#collapseSeven">
+                        <i class="icon-hdd"></i> IT
+                    </a>
+                </div>
+                <div id="collapseSeven" class="accordion-body collapse" style="height: 0px; ">
+                    <div class="accordion-inner">
+                        <ul>
+                            <li>This is one</li>
+                            <li>This is two</li>
+                            <li>This is Three</li>
+                        </ul>                 
+                    </div>
+                 </div>
+            </div>
+            <div class="accordion-group">
+                <div class="accordion-heading">
+                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#leftMenu" href="#collapseEight">
+                        <i class="icon-shopping-cart"></i> Kasir
+                    </a>
+                </div>
+                <div id="collapseEight" class="accordion-body collapse" style="height: 0px; ">
+                    <div class="accordion-inner">
+                        <ul>
+                            <li>This is one</li>
+                            <li>This is two</li>
+                            <li>This is Three</li>
+                        </ul>                 
+                    </div>
+                 </div>
+            </div>
+            <div class="accordion-group">
+                <div class="accordion-heading">
+                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#leftMenu" href="#collapseNine">
+                        <i class="icon-wrench"></i> Mekanik
+                    </a>
+                </div>
+                <div id="collapseNine" class="accordion-body collapse" style="height: 0px; ">
+                    <div class="accordion-inner">
+                        <ul>
+                            <li>This is one</li>
+                            <li>This is two</li>
+                            <li>This is Three</li>
+                        </ul>                 
+                    </div>
+                 </div>
+            </div>
+            <div class="accordion-group">
+                <div class="accordion-heading">
+                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#leftMenu" href="#collapseTen">
+                        <i class="icon-repeat"></i> Operasi
+                    </a>
+                </div>
+                <div id="collapseTen" class="accordion-body collapse" style="height: 0px; ">
+                    <div class="accordion-inner">
+                        <ul>
+                            <li>This is one</li>
+                            <li>This is two</li>
+                            <li>This is Three</li>
+                        </ul>                 
+                    </div>
+                 </div>
+            </div>
+            <div class="accordion-group">
+                <div class="accordion-heading">
+                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#leftMenu" href="#collapseEleven">
+                        <i class="icon-check"></i> PAK
+                    </a>
+                </div>
+                <div id="collapseEleven" class="accordion-body collapse" style="height: 0px; ">
+                    <div class="accordion-inner">
+                        <ul class="nav nav-stacked nav-pills">
+                            <li><a href="master_driver.html">Master Pengemudi</a></li>
+                            <li><a href="surat_rekomendasi_pengemudi.html">Surat Rekomendasi Pengemudi</a></li>
+                            <li><a href="tanda_terima_deposit.html">Tanda Terima Deposit</a></li>
+                            <li><a href="cetak_kip.html">Cetak KIP</a></li>
+                            <li class="active"><a href="koreksi_hutang_deposit.html">Koreksi Hutang Deposit</a></li>
+                            <li><a href="jadwal_training.html">Jadwal Training</a></li>
+                            <li><a href="cetak_daftar_hadir.html">Cetak Daftar Hadir</a></li>
+                            <li><a href="pelanggaran_penghargaan.html">Pelanggaran dan Penghargaan Driver</a></li>
+                            <li><a href="laporan.html">Laporan</a></li> 
+                        </ul>                 
+                    </div>
+                 </div>
+            </div>
+            <div class="accordion-group">
+                <div class="accordion-heading">
+                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#leftMenu" href="#collapseTwelve">
+                        <i class="icon-tags"></i> Purchasing
+                    </a>
+                </div>
+                <div id="collapseTwelve" class="accordion-body collapse" style="height: 0px; ">
+                    <div class="accordion-inner">
+                        <ul>
+                            <li>This is one</li>
+                            <li>This is two</li>
+                            <li>This is Three</li>
+                        </ul>                 
+                    </div>
+                 </div>
+            </div>    
+            <div class="accordion-group">
+                <div class="accordion-heading">
+                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#leftMenu" href="#collapseThirteen">
+                        <i class="icon-asterisk"></i> T & D
+                    </a>
+                </div>
+                <div id="collapseThirteen" class="accordion-body collapse" style="height: 0px; ">
+                    <div class="accordion-inner">
+                        <ul>
+                            <li>This is one</li>
+                            <li>This is two</li>
+                            <li>This is Three</li>
+                        </ul>                 
+                    </div>
+                 </div>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div class="row-fluid">
+                <div class="navbar navbar-static-top">
+                    <div class="navigation">
+                        <nav>
+                            <ul class="nav topnav bold">
+                                <li><a href="#myModal" data-toggle="modal"><i class="icon-plus"></i> Tambah</a></li>
+                                <li><a href="#"><i class="icon-print"></i> Cetak</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal -->
+            <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h3 id="myModalLabel">Tambah baru</h3>
+              </div>
+              <div class="modal-body">
+                <form action="" method="post" class="form-horizontal" id="form_pengemudi" accept-charset="utf-8">
+                    <div class="row-fluid">
+                        <div class="span5">
+                          <div class="control-group">
+                            <label for="no_transaksi" class="control-label">No Transaksi</label>
+                            <div class="controls">
+                              <input name="no_transaksi" type="text" value="" id="no_transaksi" required>
+                            </div>
+                          </div>
+                          <div class="control-group">
+                            <label for="pool" class="control-label">Pool</label>
+                            <div class="controls">
+                              <select name="pool">
+                                <option>Bintaro</option>
+                                <option>Sudirman</option>
+                                <option>Blok M</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="control-group">
+                            <label for="tanggal_adjustment" class="control-label">Tanggal Adjustment</label>
+                            <div class="controls">
+                                <input type="text" id="tanggal_adjustment" name="tanggal_adjustment">
+                            </div>
+                          </div>
+
+                        </div>
+                        <div class="span5">
+                          <div class="control-group">
+                            <label for="tanggal_berlaku" class="control-label">Tanggal Berlaku</label>
+                            <div class="controls">
+                                <input type="text" id="tanggal_berlaku" name="tanggal_berlaku">
+                            </div>
+                          </div>                        
+                          <div class="control-group">
+                            <label for="kip" class="control-label">KIP</label>
+                            <div class="controls">
+                                <input type="text" id="kip" name="kip">
+                            </div>
+                          </div>
+                          <div class="control-group">
+                            <label for="tipe_pengemudi" class="control-label">Tipe Pengemudi</label>
+                            <div class="controls">
+                              <select name="tipe_pengemudi">
+                                <option>Bintaro</option>
+                                <option>Sudirman</option>
+                                <option>Blok M</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="control-group">
+                            <label for="catatan" class="control-label">Catatan</label>
+                            <div class="controls">
+                                <textarea rows="3" name="catatan" id="catatan"></textarea>
+                            </div>
+                          </div>
+
+                        </div>
+                    </div>
+                    <div class="row-fluid">
+                      <div class="form-actions">
+                        <button type="Submit" class="btn btn-success">Tambah Baru</button>
+                      </div>
+                    </div>
+                </form>
+              </div>
+              <!--
+              <div class="modal-footer">
+                <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+                <button class="btn btn-primary">Save changes</button>
+              </div>
+                -->
+            </div>
+
+          <div class="thelabel"><span>Cetak KIP</span></div>
+          <div class="row-fluid subcontent">
+            <table class="table table-condensed">
+                <thead>
+                  <tr>
+                    <th>#</th>
+                    <th>Pool</th>
+                    <th>Tipe Pengemudi</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Nomor KIP</th>
+                    <th>Status Pengemudi</th>
+                    <th style="width: 36px;"></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>Jakarta</td>
+                    <td>Taxi</td>
+                    <td>Mark</td>
+                    <td>Tompson</td>
+                    <td>the_mark7</td>
+                    <td>tetap</td>
+                    <td>
+                    <a href="user.html"><i class="icon-pencil"></i></a>
+                    <a href="#myModal" role="button" data-toggle="modal"><i class="icon-remove"></i></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>Bintaro</td>
+                    <td>Taxi</td>
+                    <td>Ashley</td>
+                    <td>Jacobs</td>
+                    <td>ash11927</td>
+                    <td>tidak tetap</td>
+                    <td>
+                    <a href="user.html"><i class="icon-pencil"></i></a>
+                    <a href="#myModal" role="button" data-toggle="modal"><i class="icon-remove"></i></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>Senayan</td>
+                    <td>Taxi</td>
+                    <td>Audrey</td>
+                    <td>Ann</td>
+                    <td>audann84</td>
+                    <td>tetap</td>
+                    <td>
+                    <a href="user.html"><i class="icon-pencil"></i></a>
+                    <a href="#myModal" role="button" data-toggle="modal"><i class="icon-remove"></i></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>Senayan</td>
+                    <td>Taxi</td>
+                    <td>John</td>
+                    <td>Robinson</td>
+                    <td>jr5527</td>
+                    <td>tidak tetap</td>
+                    <td>
+                    <a href="user.html"><i class="icon-pencil"></i></a>
+                    <a href="#myModal" role="button" data-toggle="modal"><i class="icon-remove"></i></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td>Bintaro</td>
+                    <td>Taxi</td>
+                    <td>Aaron</td>
+                    <td>Butler</td>
+                    <td>aaron_butler</td>
+                    <td>tetap</td>
+                    <td>
+                    <a href="user.html"><i class="icon-pencil"></i></a>
+                    <a href="#myModal" role="button" data-toggle="modal"><i class="icon-remove"></i></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>6</td>
+                    <td>Senayan</td>
+                    <td>Taxi</td>
+                    <td>Chris</td>
+                    <td>Albert</td>
+                    <td>cab79</td>
+                    <td>tidak tetap</td>
+                    <td>
+                    <a href="user.html"><i class="icon-pencil"></i></a>
+                    <a href="#myModal" role="button" data-toggle="modal"><i class="icon-remove"></i></a>
+                    </td>
+                  </tr>
+                </tbody>
+            </table>
+        </div>
+
+          <div class="pagination">
+            <ul>
+                <li><a href="#">Prev</a></li>
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">Next</a></li>
+            </ul>
+          </div>
+        </div><!-- /main-content -->
+    </div>
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="sys/includes/jquery/jquery-2.0.2.min.js"></script>
+    <script src="sys/includes/datepicker/bootstrap-datepicker.js"></script>
+    <script>
+        $("#ktp").datepicker({preventPast: true});
+        $("#sim").datepicker({preventPast: true});
+    </script>
+    <script src="sys/includes/bootstrap/js/bootstrap.js"></script>
+    <script src="sys/includes/jquery-cookie/jquery.cookie.js"></script>
+    <script>
+      // when the leftMenu is selected
+      $(function() {
+
+          $('.accordion').on('show', function (e) {
+               $(e.target).prev('.accordion-heading').find('.accordion-toggle').addClass('selected');
+          });
+          
+          $('.accordion').on('hide', function (e) {
+              $(this).find('.accordion-toggle').not($(e.target)).removeClass('selected');
+          });
+              
+      });
+    
+      // cookie to stay on last selected menu
+      $(document).ready(function() {
+          var last=$.cookie('activeAccordionGroup');
+          if (last!=null) {
+              //remove default collapse settings
+              $("#leftMenu .collapse").removeClass('in');
+              //show the last visible group
+              $("#"+last).collapse("show");
+          }
+      });
+
+      //when a group is shown, save it as the active accordion group
+      $("#leftMenu").bind('shown', function() {
+          var active=$("#leftMenu .in").attr('id');
+          $.cookie('activeAccordionGroup', active)
+      });    
+    </script>
+  </body>
+</html>
