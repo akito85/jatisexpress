@@ -56,6 +56,11 @@ body .modal.fade.in {
   top: auto; /* fade in to correct spot */
 }
 
+/* making the full height of the browser */
+body,html{
+  height:100%;
+}
+
 a {
     color: #00ace3;
     text-decoration: none;
@@ -171,6 +176,7 @@ a {
     border-bottom: 1px solid rgb(218, 227, 233);
     box-shadow: -3px 3px 3px -2px rgb(241, 241, 243);
     border-radius: 0px 0px 0px 5px;
+    height: 100%;
 }
 
 .content { padding: 40px 0 0 0; }
